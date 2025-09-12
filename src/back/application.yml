@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  address: 0.0.0.0
+
+logging:
+  level:
+    br.uem: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %clr(%5p){green} %clr([%15.15t]){yellow} %clr(%-40.40logger{39}){cyan} %clr(:){red} %m%n%wex"
+  output:
+    ansi:
+      enabled: ALWAYS
+
+path:
+  principal: /app/data/tomsc/
+  temp: /app/data/temp_files/
+  results: /app/data/results/results-
+  save:
+    graphs: graphs/
+    interaction: interaction/
+
+  files:
+    accept: accept.list
+    reject: reject.list
+    entry-file: entry-file.log
+    dependency: dependency.xml
+    general: feature
+
+config-NGSAIII:
+  max-iterations: 1000
+  population-size: 100
+  max-population: 100
+
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS

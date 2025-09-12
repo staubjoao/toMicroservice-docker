@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend.Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend.Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    volumes:
+      # Mount para a pasta principal
+      - ../tomsc:/app/data/tomsc
+      - ../results:/app/data/results
+    environment:
+    - CONFIG_FILE_PATH=/application.yml
+
+networks:
+  app-network:
+    driver: bridge

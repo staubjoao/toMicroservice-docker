@@ -1,0 +1,23 @@
+# Ignorar toda a pasta tomsc com seus arquivos grandes
+tomsc/
+
+# Ignorar arquivos de log e temporários
+*.log
+*.tmp
+*.temp
+
+# Ignorar arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignorar target e build (se for Maven/Gradle)
+target/
+build/
+bin/
+out/
+
+# Ignorar arquivos de sistema
+.DS_Store
+Thumbs.db
