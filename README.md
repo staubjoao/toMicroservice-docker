@@ -23,7 +23,7 @@ Para utilizar a ferramenta, é necessário baixar os dados de análise dos segui
 - [spring-petclinic](https://github.com/spring-projects/spring-petclinic)
 - [PartsUnlimitedMRP](https://github.com/microsoft/PartsUnlimitedMRP)
 
-📋 Dowload da entrada da toMicroservice
+📋 Dowload da entrada da toMicroservice, baixe um desses `.zip` e descompacte na pasta tomcs
 - [7ep demo](https://drive.google.com/file/d/1ZhmcI6lU-1b3FLZIizp01wkS6kJQuNNv/view?usp=sharing)
 - [jpetstore-6](https://drive.google.com/file/d/1JSKcSGR6ji1blMctRN7GuBlcvn1DTRIC/view?usp=sharing)
 - [spring-petclinic](https://drive.google.com/file/d/1kwVQbI4uApp9-ta7GGEOsMUNQ_XgPdsg/view?usp=sharing)
