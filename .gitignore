@@ -1,5 +1,10 @@
 # Ignorar toda a pasta tomsc com seus arquivos grandes
-tomsc/
+tomsc/accept.list
+tomsc/dependency.xml
+tomsc/entry-file.log
+tomsc/feature
+tomsc/generalFunctionalities.list
+tomsc/reject.list
 
 # Ignorar arquivos de log e temporários
 *.log
