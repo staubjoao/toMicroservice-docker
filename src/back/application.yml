@@ -30,6 +30,8 @@ config-NGSAIII:
   max-iterations: 1000
   population-size: 100
   max-population: 100
+  crossover-probability: 90%
+  crossover-fraction: 50%
 
 spring:
   output:
