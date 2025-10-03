@@ -53,3 +53,6 @@ Suba o docker
 ```bash
 docker-compose up --build
 ```
+
+### 5. Utilize a ferramenta
+A ferramenta fica no endereço `http://localhost:5173/`
