@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   frontend:
     build:
@@ -20,11 +19,11 @@ services:
     networks:
       - app-network
     volumes:
-      # Mount para a pasta principal
-      - ../tomsc:/app/data/tomsc
-      - ../results:/app/data/results
+      # Ajuste os caminhos se necessário
+      - ./data/tomsc:/app/data/tomsc
+      - ./data/results:/app/data/results
     environment:
-    - CONFIG_FILE_PATH=/application.yml
+      - CONFIG_FILE_PATH=application.yml
 
 networks:
   app-network:
