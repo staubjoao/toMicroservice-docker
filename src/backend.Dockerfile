@@ -7,14 +7,11 @@ RUN mkdir -p /app/data/tomsc \
     && mkdir -p /app/data/graphs \
     && mkdir -p /app/data/interaction
 
+# Copie os arquivos da aplicação
 COPY back/tomicroservice-1.0.0.jar app.jar
-COPY back/application.yml application.yml
-
-COPY back/application.yml /tmp/
-
-COPY back/entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+COPY back/application.yml /application.yml
 
 EXPOSE 8080
 
-ENTRYPOINT ["/entrypoint.sh"]
+# Comando de inicialização
+CMD cp /application.yml ./ && java -jar app.jar
