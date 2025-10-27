@@ -19,11 +19,9 @@ services:
     networks:
       - app-network
     volumes:
-      # Mount para a pasta principal
-      - ../tomsc:/app/data/tomsc
-      - ../results:/app/data/results
+      - ./results:/app/data/results
     environment:
-    - CONFIG_FILE_PATH=/application.yml
+      - CONFIG_FILE_PATH=/app/application.yml
 
 networks:
   app-network:

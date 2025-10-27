@@ -13,7 +13,8 @@ RUN mkdir -p data/tomsc \
 COPY back/tomicroservice-1.0.0.jar app.jar
 COPY back/application.yml application.yml
 
+COPY tomsc/ /app/data/tomsc/
+
 EXPOSE 8080
 
-# Comando de inicialização simplificado
 CMD ["java", "-jar", "app.jar"]

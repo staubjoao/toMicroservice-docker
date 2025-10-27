@@ -1,4 +1,4 @@
-DOCKER_DIR = src
+DOCKER_DIR = ./
 
 .PHONY: up down build logs clean restart
 
