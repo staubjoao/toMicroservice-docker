@@ -14,7 +14,7 @@ logging:
 path:
   principal: /app/data/tomsc/
   temp: /app/data/temp_files/
-  results: /app/data/results/results-
+  results: /app/data/results/
   save:
     graphs: graphs/
     interaction: interaction/
